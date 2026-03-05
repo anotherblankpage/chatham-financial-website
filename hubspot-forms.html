@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HubSpot Forms</title>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="hubspot-forms.js"></script>
+
+  <!-- HubSpot embed script (shared portal, loaded once) -->
+  <script src="https://js.hsforms.net/forms/embed/developer/50554054.js" defer></script>
+
+  <link rel="stylesheet" href="hubspot-forms.css" />
+</head>
+<body class="bg-[#1D1F21] text-white min-h-screen py-10 px-4 font-sans antialiased">
+
+  <div class="hs-forms-page mx-auto flex flex-col gap-8" style="max-width:818px">
+
+    <!-- ── Contact Form ── -->
+    <section class="hs-forms-page__section hs-forms-page__contact-form bg-[#1D1F21] hs-submit-icon--send">
+      <h2 class="text-lg font-semibold text-white mb-6 tracking-tight">
+        Contact Us
+      </h2>
+      <div
+        class="hs-form-html"
+        data-region="na1"
+        data-form-id="9b9225ff-75cb-4c71-b88d-58e43431db7b"
+        data-portal-id="50554054"
+      ></div>
+    </section>
+
+    <!-- ── Subscription Opt-in ── -->
+    <section class="hs-forms-page__section hs-forms-page__subscription-form bg-[#1D1F21]">
+      <h2 class="text-lg font-semibold text-white mb-6 tracking-tight">
+        Stay in the Loop
+      </h2>
+      <div
+        class="hs-form-html"
+        data-region="na1"
+        data-form-id="0fc6dc68-a4d9-4bbe-82fd-930efd233cc6"
+        data-portal-id="50554054"
+      ></div>
+    </section>
+
+    <!-- ── General Form ── -->
+    <section class="hs-forms-page__section hs-forms-page__general-form bg-[#1D1F21]">
+      <h2 class="text-lg font-semibold text-white mb-6 tracking-tight">
+        General Enquiry
+      </h2>
+      <div
+        class="hs-form-html"
+        data-region="na1"
+        data-form-id="fd1efc04-1f9e-4e6b-ad73-01d6b7409e8a"
+        data-portal-id="50554054"
+      ></div>
+    </section>
+
+  </div>
+
+</body>
+</html>
